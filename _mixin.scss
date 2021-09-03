@@ -1,0 +1,178 @@
+@mixin post-theme {
+    display: flex;
+        font-family: 'DM Serif Display', serif;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        margin-bottom: 17px;
+        span{
+            padding-left: 40px;
+            padding-right: 8px;
+            color: #fff;
+            font-size: 12px;
+        }  
+        img{
+            margin-left: 13px;
+            margin-right: 3px;
+            height: 10px;
+            position: relative;
+            top: 5px;
+        }  
+}
+@mixin post-details {
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    margin-bottom: 25px;
+    
+    .autor{
+        margin-right: 9px;
+    }
+    .post-date{
+        margin-left: 9px;
+    }
+}
+@mixin post {
+    .post-img{
+        height: calc(width);}
+    .post-theme{
+        display: flex;
+        font-family: 'DM Serif Display', serif;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        margin-bottom: 17px;
+        span{
+            padding-left: 40px;
+            padding-right: 8px;
+            color: #fff;
+            font-size: 12px;
+        }  
+        .view{
+            display: block;
+            margin-left: 13px;
+            margin-right: 3px;
+            width: 14px;
+            background: url(images/seen-white.png) no-repeat 50% 50%;
+            background-size: 100%;
+        }  
+    }
+    .name-of-post{
+        font-family: 'DM Serif Display', serif;
+        font-size: 22px;
+        margin-bottom: 27px;
+        padding: 0px;
+        line-height: 1.455
+    }
+    .post-details{
+        display: flex;
+        font-family: 'Nunito', sans-serif;
+        font-size: 12px;
+        color: #acafb7;
+        margin-bottom: 25px;
+        
+        .autor{
+            margin-right: 9px;
+        }
+        .post-date{
+            margin-left: 9px;
+        }
+    }
+    .post-text{
+        font-family: 'Nunito', sans-serif;
+        color: rgb(0, 0, 0);
+        line-height: 1.625;
+        text-align: justify;  
+        margin-bottom: 54px;           
+    }
+    @media(min-width:992px){
+        .post-theme{
+            margin-top: 20px;
+        }
+        
+        .name-of-post{
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        .post-details{
+            margin-bottom: 15px;
+        }
+    }
+    @media(min-width:1200px){
+        .post-theme{
+            margin-top: 35px;
+        }
+        .name-of-post{
+            font-size: 22px;
+            margin-bottom: 25px;
+        }
+        .post-details{
+            margin-bottom: 25px;
+        }
+        .post-content{
+            padding: 0 25px;
+        }
+    }
+        
+}
+@mixin xs-post {
+   
+    .post-theme{
+        margin: 10px 0 10px 0;
+        font-size: 10px;
+        span{
+            font-size: 10px;
+        }
+        img{
+            height: 6px;
+            position: relative;
+            top: 6px;
+        }
+    }
+    .post-content{
+        padding: 10px;
+        .name-of-post{
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+        .post-details{
+            font-size: 10px;
+            margin-bottom: 10px;
+        }
+        .post-text{
+            font-size: 12px;
+            text-align: left;
+            margin-bottom: 15px;
+        }
+    }
+}
+@mixin color-of-theme {
+    #vogue{
+        .post-theme{
+            span{
+                background-color: #7a2099;
+            }
+        }
+    }
+    #health{
+        .post-theme{
+            span{
+                background-color: #14ca82;
+            }
+        }
+    }
+    #fashion{
+        .post-theme{
+            span{
+                background-color: #dd4c39;
+            }
+        }
+    }
+
+}
+@mixin post-shadow {
+    box-shadow: 0 0 0 5px black;
+}
+
+
+
