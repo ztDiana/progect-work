@@ -53,7 +53,7 @@ body{
             }
             bottom: 1px; left: 0;
             background-color: rgba(2, 2, 2, 0.425);
-        }
+        } 
     }
 }
 .swiper{
@@ -68,6 +68,9 @@ body{
         text-align: left;
     }
     img{width: auto;}
+    .swiper-button-prev::after{
+        color: red;
+    }
     
 }
 #topbar{
@@ -243,7 +246,7 @@ main{
             font-family: 'DM Serif Display', serif;
             font-size: 22px;
             background: -webkit-linear-gradient(45deg, #7a2099,#4760cc,#2789e7,#17cd9c,#3ec938);
-            -webkit-background-clip: text;
+            
             -webkit-text-fill-color: transparent;
             margin-bottom: 27px;
             padding: 0px;
@@ -964,10 +967,8 @@ main{
                 font-family: 'DM Serif Display', serif;
                 font-size: 22px;
                 background: -webkit-linear-gradient(45deg, #7a2099,#4760cc,#2789e7,#17cd9c,#3ec938);
-                -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 margin-bottom: 27px;
-
             }
             .post-details{
                 display: flex;
